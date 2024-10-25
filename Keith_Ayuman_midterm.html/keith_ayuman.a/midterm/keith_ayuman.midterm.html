@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Twin Towers</title>
+
+    <link rel="icon" href="ctu_logo_cebu_technological_university_freelogovectors.net_.png" type="image/x-icon">
+
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+            background: linear-gradient(to right, #1a1a1a, #4d4d4d);
+            color: #f0f0f0;
+            animation: fadeIn 2s;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; }
+            100% { opacity: 1; }
+        }
+
+        h2 {
+            text-align: center;
+            border-bottom: 2px solid #fff;
+            padding-bottom: 10px;
+            font-family: 'Verdana', sans-serif; 
+            color: #ffcc00; 
+        }
+
+        .intro-image, .about-image {
+            width: 300px;
+            height: 300px;
+            border-radius: 15px;
+            object-fit: cover;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            border: 5px solid #ffcc00;
+            display: block; 
+            margin: 0 auto; 
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 20px;
+        }
+
+        .skills, .knowledge-platforms {
+            border: 2px solid #fff;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 0 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            flex: 1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+            max-width: 300px;
+            height: auto;
+        }
+
+        .skills {
+            background-color: rgba(0, 204, 0, 0.2);
+        }
+
+        .knowledge-platforms {
+            background-color: rgba(0, 0, 204, 0.2);
+        }
+
+        .skill, .social-media {
+            border-bottom: 1px solid #fff;
+            padding: 10px 0;
+            transition: background-color 0.5s;
+            font-family: 'Tahoma', sans-serif; 
+        }
+
+        .skill:hover, .social-media:hover {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+
+        .skill:last-child, .social-media:last-child {
+            border-bottom: none;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+
+        .contact p {
+            margin: 5px 0;
+        }
+
+        button {
+            display: block;
+            margin: 20px auto;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            background-color: #007BFF;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+            font-family: 'Arial', sans-serif; 
+        }
+
+        button:hover {
+            background-color: #0056b3;
+        }
+
+        .social-media {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .social-media img {
+            margin-right: 10px;
+            width: 50px;
+            height: 50px;
+        }
+
+        .skills-container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap; 
+        }
+
+        .skills, .knowledge-platforms {
+            margin: 10px; 
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 20px;
+            padding: 10px;
+            background-color: rgba(255, 255, 255, 0.1);
+            border-top: 2px solid #fff;
+        }
+
+        section {
+            transition: transform 0.3s ;
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+        }
+    </style>
+</head>
+<body>
+
+    <section id="introduction">
+        <img src="Noobesional_pic.jpeg" class="intro-image" style="border: 5px solid #4b4749;">
+        <h2>Keith Abe Nino Ayuman</h2>
+        <p>Hi! My name is Keith Abe Nino Ayuman, and I am from Cebu, Philippines. I am a second-year Information Technology student at CTU university. I love gaming, music, and programming.</p>
+        <button onclick="document.getElementById('about-me').scrollIntoView();"> About Me</button>
+    </section>
+    
+    <section id="about-me">
+        <h2>About Me</h2>
+        <p>I grew up surrounded by technology, which sparked my interest in programming and innovation. My core values include creativity and persistence. I aspire to become a software developer and make a positive impact in the world. Here's a glimpse of my life:</p>
+        <img src="yesyesyyessssssss.jpg" class="about-image" style="border: 5px solid #4b4749;">
+    </section>
+
+    <section id="education">
+        <h2>Education</h2>
+        <div class="school">
+            <h3>Lahug Elementary School (2010-2017)</h3>
+            <p>My early education started at Lahug Elementary School, where I first developed an interest in learning and creativity.</p>
+        </div>
+        <div class="school">
+            <h3>Bitoon National Vocational High School (2017-2019)</h3>
+            <p>I then attended Bitoon National Vocational High School, where I expanded my knowledge in various subjects and explored different skills.</p>
+        </div>
+        <div class="school">
+            <h3>Apas National High School (2019-2023)</h3>
+            <p>I transferred to Apas National High School for my remaining high school years, where I continued to develop my interest in technology and programming.</p>
+        </div>
+        <div class="school">
+            <h3>Cebu Technological University (2023-present)</h3>
+            <p>Currently, I am pursuing a Bachelor of Science in Information Technology at Cebu Technological University, continuously learning and honing my programming skills.</p>
+        </div>
+    </section>
+
+    <section id="skills">
+        <h2>Skills & Knowledge Platforms</h2>
+        <div class="skills-container">
+            <div class="skills">
+                <h3>Skills</h3>
+                <div class="skill">
+                    <p>Teamwork and Collaboration</p>
+                </div>
+                <div class="skill">
+                    <p>Creative Problem Solving</p>
+                </div>
+                <div class="skill">
+                    <p>Effective Communication</p>
+                </div>
+                <div class="skill">
+                    <p>Time Management and Organization</p>
+                </div>
+                <div class="skill">
+                    <p>Basic Computer Skills and Troubleshooting</p>
+                </div>
+            </div>
+            <div class="knowledge-platforms">
+                <h3>Knowledge Platforms</h3>
+                <div class="social-media">
+                    <img src="image.png" alt="Facebook Logo">
+                    <p>Facebook - Social Media Platform</p>
+                </div>
+                <div class="social-media">
+                    <img src="image2.png" alt="TikTok Logo">
+                    <p>TikTok - Short-Form Video Sharing</p>
+                </div>
+                <div class="social-media">
+                    <img src="image3.png" alt="Instagram Logo">
+                    <p>Instagram - Photo and Video Sharing</p>
+                </div>
+                <div class="social-media">
+                    <img src="image4.png" alt="Rumble Logo">
+                    <p>Rumble - Video Sharing Platform</p>
+                </div>
+                <div class="social-media">
+                    <img src="image5.png" alt="Twitch Logo">
+                    <p>Twitch - Live Streaming for Gamers</p>
+                </div>
+                <div class="social-media">
+                    <img src="image6.png" alt="Reddit Logo">
+                    <p>Reddit - Social News and Discussion</p>
+                </div>
+                <div class="social-media">
+                    <img src="image7.png" alt="Spotify Logo">
+                    <p>Spotify - Music Streaming Service</p>
+                </div>
+                <div class="social-media">
+ <img src="image8.png" alt="YouTube Logo">
+                    <p>YouTube - Video Sharing Platform</p>
+                </div>
+                <div class="social-media">
+                    <img src="image9.png" alt="Weibo Logo">
+                    <p>Weibo - Chinese Social Media Platform</p>
+                </div>
+                <div class="social-media">
+                    <img src="image10.png" alt="AnTuTu Logo">
+                    <p>AnTuTu Benchmark - Mobile Device Benchmarking</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>If you'd like to get in touch, feel free to reach out!</p>
+        <p>Email: <a href="mailto:ayumankeithabenino@gmail.com">ayumankeithabenino@gmail.com</a></p>
+        <p>Phone: <a href="tel:09923470748">09923470748</a></p>
+        <p>
+            Facebook: 
+            <a href="https://www.facebook.com/keithabenino" target="_blank">
+                Keith Abe Nino
+            </a>
+        </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Keith Abe Nino Ayuman</p>
+    </footer>
+    
+</body>
+</html>
